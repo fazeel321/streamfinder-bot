@@ -623,3 +623,5 @@ http.createServer(async (req, res) => {
     return json(404, { error: 'Not found' });
   } catch (e) {
     return json(500, { error: e.message });
+  }
+}).listen(PORT, '0.0.0.0', () => console.log('StreamFinder running on port ' + PORT));
